@@ -12,6 +12,5 @@
       </div>
      <?php include 'includes/tabs.php'; ?>
     </header>
-    
-</body>
-</html>
+<main>
+  
