@@ -8,7 +8,7 @@
 <body>
     <header>
       <div class="logoContainer">
-        <img src="assets/images/logo.png" alt="logo" class="logo">
+        <img src="assets/img/logo.png" alt="logo" class="logo">
       </div>
      <?php include 'includes/tabs.php'; ?>
     </header>
