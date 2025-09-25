@@ -1,0 +1,53 @@
+:root {
+
+  --color-bg: #0D0D0D;          /* Fondo principal negro suave */
+  --color-bg-alt: #1A1A1A;      /* Fondo alternativo */
+  --color-surface: #121212;     /* Superficies (inputs, cards base) */
+
+  --color-text: #F5F5F5;        /* Texto principal */
+  --color-text-muted: #B3B3B3;  /* Texto secundario */
+
+  --color-red: #E63946;
+  --color-pink: #FF4DA6;
+  --color-orange: #FF7A45;
+  --color-blue: #2979FF;
+  --color-turquoise: #00D4D8;
+  --color-purple: #7B2CBF;
+
+
+  --color-red-dark: #B22234;
+  --color-blue-dark: #1E3A8A;
+  --color-purple-dark: #4B0082;
+  --color-turquoise-dark: #008C91;
+
+
+  --color-primary: var(--color-blue);            /* Botones principales, links */
+  --color-primary-hover: var(--color-blue-dark);
+  --color-primary-active: var(--color-turquoise-dark);
+
+  --color-secondary: var(--color-purple);       /* Botones secundarios, acentos */
+  --color-secondary-hover: var(--color-purple-dark);
+  --color-secondary-active: var(--color-pink);
+
+  --color-accent: var(--color-orange);          /* Detalles (iconos, highlights) */
+
+  --color-border: #2E2E2E;                      /* Bordes suaves */
+  --color-border-strong: var(--color-turquoise);/* Bordes en hover/focus accesibles */
+
+  /* ---------- Componentes ---------- */
+  --color-card-bg: var(--color-bg-alt);         /* Fondo cards */
+  --color-card-border: var(--color-border);
+
+  --color-form-bg: var(--color-bg-alt);         /* Fondo de forms */
+  --color-form-border: var(--color-purple-dark);
+  --color-form-focus: var(--color-turquoise);
+
+  --color-button-text: var(--color-text);       /* Texto en botones */
+  --color-input-text: var(--color-text);
+  --color-placeholder: var(--color-text-muted);
+
+  /* ---------- Utility ---------- */
+  --color-success: #4CAF50;
+  --color-warning: #FFC107;
+  --color-error: var(--color-red);
+}
