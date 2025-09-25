@@ -7,16 +7,11 @@
 </head>
 <body>
     <header>
-        <a href="#">Welcome to My Website
-            <span class="logo-icon"></span>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logoContainer">
+        <img src="images/logo.png" alt="logo" class="logo">
+      </div>
+     <?php include 'includes/tabs.php'; ?>
+    </header>
     
 </body>
 </html>
