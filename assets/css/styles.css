@@ -22,7 +22,7 @@
 
 
   --color-primary: var(--color-blue);            /* Botones principales, links */
-  --color-primary-hover: var(--color-blue-dark);
+  --color-primary-hover: var(--color-orange);
   --color-primary-active: var(--color-turquoise-dark);
 
   --color-secondary: var(--color-purple);       /* Botones secundarios, acentos */
@@ -50,4 +50,74 @@
   --color-success: #4CAF50;
   --color-warning: #FFC107;
   --color-error: var(--color-red);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav.tabs {
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+nav.tabs ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: .5rem;
+  border: 1px solid var(--color-border);
+}
+
+nav.tabs li {
+  margin: 0.5rem;
+}
+
+nav.tabs a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: var(--color-bg-alt);
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
+  border: 1px solid var(--color-orange);
+}
+
+nav.tabs a:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-button-text);
+}
+
+nav.tabs a.active {
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+}
+nav.tabs a.active:hover {
+  background-color: var(--color-primary-active);
+}
+
+.panel {
+  display: none;
+  padding: 2rem;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.panel.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
