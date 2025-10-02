@@ -1,11 +1,10 @@
 :root {
 
-  --color-bg: #0D0D0D;          /* Fondo principal negro suave */
-  --color-bg-alt: #1A1A1A;      /* Fondo alternativo */
-  --color-surface: #121212;     /* Superficies (inputs, cards base) */
-
-  --color-text: #F5F5F5;        /* Texto principal */
-  --color-text-muted: #B3B3B3;  /* Texto secundario */
+  --color-bg: #0D0D0D;        
+  --color-bg-alt: #1A1A1A;    
+  --color-surface: #121212;     
+  --color-text: #F5F5F5;        
+  --color-text-muted: #B3B3B3;  
 
   --color-red: #E63946;
   --color-pink: #FF4DA6;
@@ -21,28 +20,28 @@
   --color-turquoise-dark: #008C91;
 
 
-  --color-primary: var(--color-blue);            /* Botones principales, links */
+  --color-primary: var(--color-purple);           
   --color-primary-hover: var(--color-orange);
   --color-primary-active: var(--color-turquoise-dark);
 
-  --color-secondary: var(--color-purple);       /* Botones secundarios, acentos */
+  --color-secondary: var(--color-turquoise);       
   --color-secondary-hover: var(--color-purple-dark);
   --color-secondary-active: var(--color-pink);
 
-  --color-accent: var(--color-orange);          /* Detalles (iconos, highlights) */
+  --color-accent: var(--color-orange);          
 
-  --color-border: #2E2E2E;                      /* Bordes suaves */
-  --color-border-strong: var(--color-turquoise);/* Bordes en hover/focus accesibles */
+  --color-border: #2E2E2E;                      
+  --color-border-strong: var(--color-turquoise)
 
   /* ---------- Componentes ---------- */
-  --color-card-bg: var(--color-bg-alt);         /* Fondo cards */
+  --color-card-bg: var(--color-bg-alt);         
   --color-card-border: var(--color-border);
 
-  --color-form-bg: var(--color-bg-alt);         /* Fondo de forms */
+  --color-form-bg: var(--color-bg-alt);         
   --color-form-border: var(--color-purple-dark);
   --color-form-focus: var(--color-turquoise);
 
-  --color-button-text: var(--color-text);       /* Texto en botones */
+  --color-button-text: var(--color-text);     
   --color-input-text: var(--color-text);
   --color-placeholder: var(--color-text-muted);
 
@@ -52,12 +51,26 @@
   --color-error: var(--color-red);
 }
 
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.logoContainer img{
+  width: 100px;
+  height: auto;
 }
 
 nav.tabs {
@@ -120,4 +133,126 @@ nav.tabs a.active:hover {
   display: block;
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ---------- Perfil ---------- */
+.profile-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.profile-card h1 {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.profile-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-card li {
+  background: var(--color-bg-alt);
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid var(--color-border);
+}
+
+/* ---------- Música ---------- */
+.music-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.music-list h2 {
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+/* ---------- Películas ---------- */
+.movies-list {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 700px;
+}
+
+.movie-card {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.8rem 0;
+}
+
+.movie-card:last-child {
+  border-bottom: none;
+}
+
+/* ---------- Menú ---------- */
+.menu-list {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-purple-dark);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.menu-list h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+}
+
+.menu-list li {
+  padding: 0.5rem;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- Evento ---------- */
+.event-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-turquoise);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.event-card strong {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+/* ---------- Viaje ---------- */
+.trip-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-blue);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.trip-card h2 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
 }
