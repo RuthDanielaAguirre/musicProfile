@@ -23,5 +23,5 @@ include 'includes/header.php';
 </div>
 
 <?php
-include 'includes/footer.php';
+include 'public/includes/footer.php';
 ?>
