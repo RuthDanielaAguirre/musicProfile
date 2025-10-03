@@ -1,11 +1,15 @@
 <?php
+include_once __DIR__ . '/includes/functions.php';
+?>
+<?php
 include 'includes/header.php';
 ?>
+
 <div id="paneles">
     <div id="profile" class="panel active">
         <?php include 'sections/profile.php'; ?>
     </div>
-    <div id="music" class="panel">
+     <div id="music" class="panel">
         <?php include 'sections/music.php'; ?>
     </div>
     <div id="movies" class="panel">
@@ -19,9 +23,8 @@ include 'includes/header.php';
     </div>
     <div id="travel" class="panel">
         <?php include 'sections/travel.php'; ?>
-    </div>
+    </div> 
 </div>
 
-<?php
-include 'public/includes/footer.php';
-?>
+<?php include __DIR__ . '/includes/footer.php'; ?>
+

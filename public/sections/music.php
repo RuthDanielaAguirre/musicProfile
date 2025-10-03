@@ -1,6 +1,4 @@
 <?php
-include 'includes/functions.php';
-
 $music = [
     ["title" => "Wonder Wall", "artist" => "Oasis"],
     ["title" => "Expresso", "artist" => "Sabrina Carpenter"],
@@ -8,4 +6,4 @@ $music = [
 ];
 ?>
 
-<?= renderMusic($music); ?>
+<?= renderMusicList($music); ?>
