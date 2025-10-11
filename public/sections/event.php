@@ -1,8 +1,6 @@
 <?php
-$trip = [
-    "destino" => "Roma",
-    "dias" => 5
-];
+$inscripcion = 50;
+$taller = 25;
 ?>
 
-<?= renderTrip($trip); ?>
+<?= renderEvent($inscripcion, $taller); ?>

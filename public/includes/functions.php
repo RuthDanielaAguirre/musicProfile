@@ -1,10 +1,10 @@
 <?php
-// Formatea un número como precio con 2 decimales y símbolo €
+// Formatea el precio con 2 decimales y símbolo €
 function formatPrice($num) {
     return number_format($num, 2, ',', '.') . " €";
 }
 
-// Calcula el total de inscripción + taller y lo devuelve formateado
+// Calcula el total de inscripción + taller 
 function calcTotal($inscripcion, $taller) {
     $resultado = $inscripcion + $taller;
     return formatPrice($resultado);
@@ -35,7 +35,7 @@ function renderProfile($profile) {
 
 // ---------- Menú ----------
 
-// Renderiza un único plato
+// Renderiza un plato
 function renderMenu($menu) {
     $platillo = $menu["platillo"];
     $precio = formatPrice($menu["precio"]);
@@ -48,16 +48,19 @@ function renderMenu($menu) {
     ";
 }
 
-// Renderiza una lista de varios platos
+// Renderiza la lista de platos
 function renderMenuList($menuArray) {
     $html = "<div class='menu-list'><h2>Menú favorito</h2><ul>";
+    $totalMenu = 0;
     
     foreach ($menuArray as $item) {
         $platillo = $item["platillo"];
         $precio = formatPrice($item["precio"]);
         $html .= "<li>$platillo — $precio</li>";
+        $totalMenu += $item["precio"];
     }
-    
+
+    $html .= "<p><strong>Total: " . formatPrice($totalMenu) . "</strong></p>";
     $html .= "</ul></div>";
     return $html;
 }
@@ -71,13 +74,13 @@ function renderMusic($song) {
 
     return "
     <div class='music-card'>
-        <h2>🎵 $title</h2>
+        <h2>$title</h2>
         <p>$artist</p>
     </div>
     ";
 }
 
-// Renderiza una lista de canciones (playlist)
+// Renderiza la playlist
 function renderMusicList($musicArray) {
     $html = "<div class='music-list'><h2>Playlist</h2>";
 
@@ -104,7 +107,7 @@ function renderMovie($film) {
     ";
 }
 
-// Renderiza lista de películas + total de minutos y cantidad
+// Renderiza lista de películas + total de minutos
 function renderMovies($movies) {
     $html = "<div class='movies-list'><h2>Maratón de películas</h2>";
 
