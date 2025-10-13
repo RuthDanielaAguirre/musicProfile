@@ -1,14 +1,14 @@
-My Profile 🚀
+# My Profile 🚀
 Un perfil personal moderno y responsive construido con PHP, HTML, CSS y JavaScript, containerizado con Docker.
 
-✨ Características
+# Características
 Diseño moderno - Interfaz limpia y profesional con efectos visuales atractivos
 
 Completamente responsive - Se adapta a dispositivos móviles y desktop
 
 Navegación por pestañas - Interfaz intuitiva con transiciones suaves
 
-Múltiples secciones:
+# Múltiples secciones:
 
 👤 Perfil personal con stack tecnológico
 
@@ -22,7 +22,7 @@ Múltiples secciones:
 
 ✈️ Próximos viajes
 
-🛠️ Tecnologías Utilizadas
+# Tecnologías Utilizadas
 Backend: PHP 8.3
 
 Frontend: HTML5, CSS3 con variables CSS, JavaScript ES6+
@@ -33,25 +33,24 @@ Containerización: Docker & Docker Compose
 
 Estilo: Diseño moderno con gradientes, sombras y transiciones
 
-🚀 Instalación y Ejecución
+# Instalación y Ejecución
 Prerrequisitos
 Docker
 
 Docker Compose
 
-Pasos para ejecutar
+# Pasos para ejecutar
 Clonar el repositorio
 
-bash
 git clone https://github.com/tu-usuario/my-profile.git
 cd my-profile
 Ejecutar con Docker Compose
 
-bash
+
 docker-compose up
 Abrir en el navegador
 
-text
+
 http://localhost:8081
 
 🐛 Solución de Problemas
@@ -87,34 +86,10 @@ docker-compose logs -f
 
 # Reconstruir contenedores
 docker-compose up --build
-👨‍💻 Desarrollo
-Para desarrollo con cambios en caliente:
 
-bash
-docker-compose up
-Los cambios en los archivos PHP/HTML/CSS/JS se reflejarán automáticamente.
-
-📄 Licencia
+# Licencia
 Este proyecto es de uso educativo y personal.
 
 ¡Listo para usar! 🎉 Ejecuta docker-compose up y visita http://localhost:8081 para ver tu perfil en acción.
 
-🔗 Comandos Git para Subir el Proyecto
-bash
-# Inicializar repositorio (si es nuevo)
-git init
 
-# Agregar todos los archivos
-git add .
-
-# Hacer primer commit
-git commit -m "Initial commit: My Profile project with Docker"
-
-# Agregar repositorio remoto (reemplaza con tu URL)
-git remote add origin https://github.com/tu-usuario/my-profile.git
-
-# Subir a GitHub
-git push -u origin main
-
-# O si usas master en lugar de main:
-git push -u origin master
